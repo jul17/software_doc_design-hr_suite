@@ -1,6 +1,8 @@
 import EmployeeModel from "../models/employee.js";
 import { generateRandId } from "../utils.js";
+
 export default class EmployeeService {
+
   async getAll() {
     const foundEmployees = await EmployeeModel.findAll({
       order: [["id"]],

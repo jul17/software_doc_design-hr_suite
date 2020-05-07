@@ -10,10 +10,8 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "start": "node app.js",
-    "sendData": "curl -X GET http://localhost:8080/info",
-    "dev": "nodemon -r dotenv/config app.js",
-    "generateFile": "node scripts/generateFile.js"
+    "start": "node -r dotenv/config app.js",
+    "dev": "nodemon -r dotenv/config app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
